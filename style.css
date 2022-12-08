@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f3e8e3;
+}
+
+header {
+position: relative;
+}
+
+.Navbar {
+    position: absolute;
+    height: 7rem;
+    width: 100%;
+    background-color: #F2C2C2;
+}
+.menu{
+    position: relative;
+    width: 100vw;
+    min-height: 5vh;
+    background: #F2D9D0;
+    box-shadow: 0px 0px 6px #b97c88;
+    max-width: 100%;
+    top: 7rem;
+}
+.itens-menu {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+
+    list-style: none;
+    height: 3rem;
+    min-width: 7rem;
+    
+}
+.Busca {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#txtBusca{
+    font-size: 17px;
+    width: 20rem;
+    height: 1.5rem;
+    border: 0;
+    padding: 0.3rem;
+    margin: 0;
+    outline: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+}
+#txtBusca:focus {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    transition: 1s;
+}
+
+
+.lupa {
+    background: none;
+    color: white;
+
+    border: none;
+    margin: 0.3rem;
+
+}
+.lupa:hover{
+
+    max-width: 100%;
+    transform: scale(1.2)
+}
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-family: 'Klee One', cursive;
+    
+}
+.menu .itens-menu  li .txt:hover{
+    font-size: 1.3rem;
+    color: #c58893;
+}
+
+.temas-livros{
+    position: absolute;
+    display: none;
+    right: 1rem;
+
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+    border: 0;
+    border-radius: 0.5rem;
+    
+
+
+    list-style: none;
+    background-color: #F2C2C2;
+    opacity: 0.8;
+          
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.butoes{
+    position: absolute;
+    right: 3rem;
+
+
+}
+.butao {
+    display: block;
+    margin: 0.5rem;
+    left: 50rem;
+    background-color: #f3ded6;
+    border: 0;
+    padding:0.4rem 1rem;
+    border-radius: 0.4rem;
+
+    
+}
+.butao:hover {
+    
+    background-color: #F2D9D080;
+    border: #fab5b5 solid;
+    max-width: 100%;
+    transform: scale(0.9)
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #txtBusca {
+        width: 12rem;
+    }
+    .menu ul li a {
+        font-size: 1rem;
+    }
+    .butoes {
+        right: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .butoes {
+        right: 0.1rem;
+    }
+}
