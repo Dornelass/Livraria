@@ -9,8 +9,9 @@
     <!-- Links -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.js">
+    <script src="index.js"></script>
     
 
 </head>
@@ -28,7 +29,7 @@
                 </button>
                 <div class="butoes">
                     <button class="butao" >Perfil</button>
-                    <button class="butao" >Login</button>
+                    <button class="butao" onclick="abrir()">Login</button>
                 </div>
                 
             </div>
@@ -61,6 +62,20 @@
         </nav>
         
     </header>
+
+        <div class="popup" id="popup">
+            <div class="Pop">
+                <h1>Login</h1>
+                <button onclick=fechar() class="close" ><span class="material-symbols-outlined">
+                    close
+                    </span></button>
+            <input class="email">
+            <input class="senha">
+
+                    
+
+            </div>
+        </div>  
     
 
 </body>

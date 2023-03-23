@@ -1,15 +1,17 @@
+/* GLOBAL */
+
 *{
     padding: 0;
     margin: 0;
 }
 body {
     background-color: #f3e8e3;
+    overflow: hidden;
+    
 }
+ /*  -------------------------------  */
 
-header {
-position: relative;
-}
-
+/* BARRA DE NAVEGAÇÃO  */
 .Navbar {
     position: absolute;
     height: 7rem;
@@ -62,8 +64,6 @@ position: relative;
     border-radius: 2px;
     transition: 1s;
 }
-
-
 .lupa {
     background: none;
     color: white;
@@ -135,8 +135,50 @@ position: relative;
     transform: scale(0.9)
     
 }
+ /* ------------------------------------*/
 
 
+
+/* POPUP */
+      
+
+.popup {
+    position: absolute;
+    display: none;
+    left: 35%;
+    top: 30%;
+    
+    
+    background-color: #A3D9C5;
+    height:45%;
+    width:30%;
+}
+
+.Pop h1  {
+    position: relative;
+    left: 45%;
+    font-family: 'Klee One', cursive;
+}
+.Pop  input{
+    position: relative;
+    display: block;
+    
+}
+ .close {
+    
+    position: relative;
+    left: 90%;
+    margin-top: 4%;
+    cursor: pointer;
+
+    background: none;
+    color: white;
+    border: 0;
+   
+}
+/* -------------------------------- */
+
+/* RESPONSIVIDADE  */
 @media only screen and (max-width: 600px) {
 
     #txtBusca {
@@ -148,9 +190,13 @@ position: relative;
     .butoes {
         right: 1rem;
     }
+    
 }
 @media only screen and (max-width: 400px) {
     .butoes {
         right: 0.1rem;
     }
+ 
+    
 }
+/* ----------------------------------------------- */
